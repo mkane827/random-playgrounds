@@ -1,0 +1,84 @@
+<style>
+  input {
+    display: block;
+    height: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+  .errors {
+    color: red;
+  }
+
+  .random-picks {
+    font-size: 2em;
+  }
+</style>
+
+<script>
+  let list = [];
+  let number = 1;
+  function fileChosen(e) {
+    e.files[0].text()
+      .then(raw => {
+        list = raw.split('\n');
+        getRandoms();
+      });
+  }
+
+  function numberChosen(e) {
+    number = e.value;
+    getRandoms();
+  }
+
+  function getRandoms() {
+    if (!validate()) {
+      return;
+    }
+
+    const randomPicks = document.querySelector('.random-picks');
+    removeAllChildren(randomPicks);
+
+    for (let i = 0; i < number; i++) {
+      const r = Math.ceil(Math.random() * 100 % (list.length - 1));
+      const e = document.createElement('li');
+      e.appendChild(document.createTextNode(list[r]));
+      randomPicks.appendChild(e);
+    }
+  }
+
+  function validate() {
+    const e = document.querySelector('.errors');
+    removeAllChildren(e);
+
+    if (list.length < 1) {
+      e.appendChild(
+        document.createElement('li')
+          .appendChild(document.createTextNode('No file selected or file is empty')))
+      return false;
+    }
+
+    return true;
+  }
+
+  function removeAllChildren(e) {
+    while (e.firstChild) e.removeChild(e.firstChild);
+  }
+</script>
+
+<form>
+  <input class="file-chooser" type="file" onchange="fileChosen(this)" accept=".csv" required />
+
+
+  <label>How many picks?
+    <input type="number" onchange="numberChosen(this)" min="1" value="1" required>
+    </input>
+  </label>
+
+  <button type="button" onclick="getRandoms()">Do it again!</button>
+</form>
+
+<ul class="errors"></ul>
+
+<ol class="random-picks">
+</ol>
