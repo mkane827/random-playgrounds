@@ -10,10 +10,23 @@
     height: 25px;
     border-radius: 100%;
     box-shadow: 4px 2px 3px 0 rgba(13, 39, 80, .40), -2px -2px 3px 0 #ffffff;
+    position: relative;
+    top: 0;
+
+    transition: All 250ms ease;
   }
 
   img {
     height: 100%;
+  }
+
+  a:hover {
+    box-shadow: 4px 2px 3px 2px rgba(13, 39, 80, .40), -2px -2px 3px 2px #ffffff;
+  }
+
+  a:active {
+    box-shadow: none;
+    top: 2px;
   }
 </style>
 
