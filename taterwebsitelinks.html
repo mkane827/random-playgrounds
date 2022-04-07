@@ -1,0 +1,286 @@
+<style>
+  body {
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  a {
+    display: inline-block;
+    margin-left: 13px;
+    height: 25px;
+    border-radius: 100%;
+    box-shadow: 4px 2px 3px 0 rgba(13, 39, 80, .40), -2px -2px 3px 0 #ffffff;
+    position: relative;
+    top: 0;
+
+    transition: All 250ms ease;
+  }
+
+  img {
+    height: 100%;
+  }
+
+  a:hover {
+    box-shadow: 4px 2px 3px 2px rgba(13, 39, 80, .40), -2px -2px 3px 2px #ffffff;
+  }
+
+  a:active {
+    box-shadow: none;
+    top: 2px;
+  }
+
+  .splode {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .splode.smol {
+    height: 10px;
+    width: 10px;
+  }
+
+  a:hover .splode:nth-child(2) {
+    animation-name: splode1, fadeInOut, spin;
+    animation-duration: 500ms;
+    animation-timing-function: ease;
+  }
+
+  a:hover .splode:nth-child(3) {
+    animation-name: splode2, fadeInOut, spin;
+    animation-duration: 350ms;
+    animation-timing-function: ease;
+  }
+
+  a:hover .splode:nth-child(4) {
+    animation-name: splode3, fadeInOut, spin;
+    animation-duration: 400ms;
+    animation-timing-function: ease;
+  }
+
+  a:hover .splode:nth-child(5) {
+    animation-name: splode4, fadeInOut, spin;
+    animation-duration: 300ms;
+    animation-timing-function: ease;
+  }
+
+  a:hover .splode:nth-child(6) {
+    animation-name: splode5, fadeInOut, spin;
+    animation-duration: 700ms;
+    animation-timing-function: ease;
+  }
+
+  a:hover .splode:nth-child(7) {
+    animation-name: splode6, fadeInOut, spin;
+    animation-duration: 550ms;
+    animation-timing-function: ease;
+  }
+
+  a:hover .splode:nth-child(8) {
+    animation-name: splode7, fadeInOut, spin;
+    animation-duration: 450ms;
+    animation-timing-function: ease;
+  }
+
+  a:hover .splode:nth-child(9) {
+    animation-name: splode8, fadeInOut, spin;
+    animation-duration: 750ms;
+    animation-timing-function: ease;
+  }
+
+  @keyframes fadeInOut {
+    0% {
+      visibility: visible;
+      transform: rotate(1deg);
+    }
+
+    30% {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    70% {
+      visibility: visible;
+      opacity: 1
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(1deg);
+    }
+
+    100% {
+      transform: rotate(270deg);
+    }
+  }
+
+  @keyframes splode1 {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+
+    100% {
+      left: 50px;
+      top: 50px;
+    }
+  }
+
+  @keyframes splode2 {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+
+    100% {
+      left: -30px;
+      top: -30px;
+    }
+  }
+
+  @keyframes splode3 {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+
+    100% {
+      left: 30px;
+      top: -70px;
+    }
+  }
+
+  @keyframes splode4 {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+
+    100% {
+      left: -20px;
+      top: 40px;
+    }
+  }
+
+  @keyframes splode5 {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+
+    100% {
+      left: 10px;
+      top: 65px;
+    }
+  }
+
+  @keyframes splode6 {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+
+    100% {
+      left: 10px;
+      top: -60px;
+    }
+  }
+
+  @keyframes splode7 {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+
+    100% {
+      left: 45px;
+      top: 10px;
+    }
+  }
+
+  @keyframes splode8 {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+
+    100% {
+      left: -50px;
+      top: 0px;
+    }
+  }
+</style>
+
+<div>
+  <a href="https://twitter.com/mrtaterthecorgi">
+    <img
+      src="https://lh3.googleusercontent.com/pw/AM-JKLVO5dJfEp1GKCifbDGrJkWieurNNJ1tNsn7MRiOD6yXIsl1brq7ZWnAsD-GKAbQz1LWdFNeSEvkX0M3HfCtP69qkdLRlmmq7da_-Y-LF9ZsOe6yXOpp8Y30yMpU28qauSwbB0-Na7ZVTXvSVWbV1AEPtA=s500-no?authuser=0"
+      alt="twitter">
+    <img class="splode" src="https://cdn2.iconfinder.com/data/icons/1-animal-nature/16/bone_Line_pixelicons-512.png">
+    <img class="splode" src="https://cdn2.iconfinder.com/data/icons/1-animal-nature/16/bone_Line_pixelicons-512.png">
+    <img class="splode" src="https://cdn2.iconfinder.com/data/icons/1-animal-nature/16/bone_Line_pixelicons-512.png">
+    <img class="splode" src="https://cdn2.iconfinder.com/data/icons/1-animal-nature/16/bone_Line_pixelicons-512.png">
+    <img class="splode smol"
+      src="https://lh3.googleusercontent.com/proxy/kjpoN7eV27AW7ZpBNQMZO-JysV73kV6e3vaf-k64_PV1S7wTgpTsarkTNKvJ_oBI-TFgMrAOB5wvzmtiaeWJ6Lu8">
+    <img class="splode smol"
+      src="https://lh3.googleusercontent.com/proxy/kjpoN7eV27AW7ZpBNQMZO-JysV73kV6e3vaf-k64_PV1S7wTgpTsarkTNKvJ_oBI-TFgMrAOB5wvzmtiaeWJ6Lu8">
+    <img class="splode smol"
+      src="https://lh3.googleusercontent.com/proxy/kjpoN7eV27AW7ZpBNQMZO-JysV73kV6e3vaf-k64_PV1S7wTgpTsarkTNKvJ_oBI-TFgMrAOB5wvzmtiaeWJ6Lu8">
+    <img class="splode smol"
+      src="https://lh3.googleusercontent.com/proxy/kjpoN7eV27AW7ZpBNQMZO-JysV73kV6e3vaf-k64_PV1S7wTgpTsarkTNKvJ_oBI-TFgMrAOB5wvzmtiaeWJ6Lu8">
+  </a>
+  <a href="https://www.instagram.com/mrtaterthecorgi/">
+    <img
+      src="https://lh3.googleusercontent.com/pw/AM-JKLW6btlhSWyChod1IeneK1aJ4EEYG34iTLyCdjQ9DBImMbH7EnnZBy4bYQdx4QV7tCbko1uNxlkgCd_ZxMUek9XAiXYlaWxFeKBphhaCM-JAL2-_p4WrR_M7M18OwlcV1Pcvm0G9EyPIaf74ACCkqmDkfw=s500-no?authuser=0"
+      alt="instagram">
+    <img class="splode" src="https://cdn2.iconfinder.com/data/icons/1-animal-nature/16/bone_Line_pixelicons-512.png">
+    <img class="splode" src="https://cdn2.iconfinder.com/data/icons/1-animal-nature/16/bone_Line_pixelicons-512.png">
+    <img class="splode" src="https://cdn2.iconfinder.com/data/icons/1-animal-nature/16/bone_Line_pixelicons-512.png">
+    <img class="splode" src="https://cdn2.iconfinder.com/data/icons/1-animal-nature/16/bone_Line_pixelicons-512.png">
+    <img class="splode smol"
+      src="https://lh3.googleusercontent.com/proxy/kjpoN7eV27AW7ZpBNQMZO-JysV73kV6e3vaf-k64_PV1S7wTgpTsarkTNKvJ_oBI-TFgMrAOB5wvzmtiaeWJ6Lu8">
+    <img class="splode smol"
+      src="https://lh3.googleusercontent.com/proxy/kjpoN7eV27AW7ZpBNQMZO-JysV73kV6e3vaf-k64_PV1S7wTgpTsarkTNKvJ_oBI-TFgMrAOB5wvzmtiaeWJ6Lu8">
+    <img class="splode smol"
+      src="https://lh3.googleusercontent.com/proxy/kjpoN7eV27AW7ZpBNQMZO-JysV73kV6e3vaf-k64_PV1S7wTgpTsarkTNKvJ_oBI-TFgMrAOB5wvzmtiaeWJ6Lu8">
+    <img class="splode smol"
+      src="https://lh3.googleusercontent.com/proxy/kjpoN7eV27AW7ZpBNQMZO-JysV73kV6e3vaf-k64_PV1S7wTgpTsarkTNKvJ_oBI-TFgMrAOB5wvzmtiaeWJ6Lu8">
+  </a>
+  <a href="https://www.facebook.com/profile.php?id=100073348686253">
+    <img
+      src="https://lh3.googleusercontent.com/pw/AM-JKLVMihP8DzcgjuFcR9yFxy3wEA62lo_NLinDmDBZQDEdmNOrSa9ETkFwpcdJackGf9dp9BBF-4Glvqk_LDQC9Qa_KiX8mMJ0pR7mcuc7YTEe_HE2ynIoRizcrlNGhbmOSpoljMRA7Q-ozmIEXlcVVB9EZg=s500-no?authuser=0"
+      alt="facebook">
+    <img class="splode" src="https://cdn2.iconfinder.com/data/icons/1-animal-nature/16/bone_Line_pixelicons-512.png">
+    <img class="splode" src="https://cdn2.iconfinder.com/data/icons/1-animal-nature/16/bone_Line_pixelicons-512.png">
+    <img class="splode" src="https://cdn2.iconfinder.com/data/icons/1-animal-nature/16/bone_Line_pixelicons-512.png">
+    <img class="splode" src="https://cdn2.iconfinder.com/data/icons/1-animal-nature/16/bone_Line_pixelicons-512.png">
+    <img class="splode smol"
+      src="https://lh3.googleusercontent.com/proxy/kjpoN7eV27AW7ZpBNQMZO-JysV73kV6e3vaf-k64_PV1S7wTgpTsarkTNKvJ_oBI-TFgMrAOB5wvzmtiaeWJ6Lu8">
+    <img class="splode smol"
+      src="https://lh3.googleusercontent.com/proxy/kjpoN7eV27AW7ZpBNQMZO-JysV73kV6e3vaf-k64_PV1S7wTgpTsarkTNKvJ_oBI-TFgMrAOB5wvzmtiaeWJ6Lu8">
+    <img class="splode smol"
+      src="https://lh3.googleusercontent.com/proxy/kjpoN7eV27AW7ZpBNQMZO-JysV73kV6e3vaf-k64_PV1S7wTgpTsarkTNKvJ_oBI-TFgMrAOB5wvzmtiaeWJ6Lu8">
+    <img class="splode smol"
+      src="https://lh3.googleusercontent.com/proxy/kjpoN7eV27AW7ZpBNQMZO-JysV73kV6e3vaf-k64_PV1S7wTgpTsarkTNKvJ_oBI-TFgMrAOB5wvzmtiaeWJ6Lu8">
+  </a>
+  <a href="https://www.pinterest.com/jennykaypollock/mr-tater-the-corgi/">
+    <img
+      src="https://lh3.googleusercontent.com/pw/AM-JKLWVnb1XGGTeQr4NjU-Ct8JUf-Z6GoLxeFPubAQE0-Akx_Rvif5nAYTmnw24rTPZ2YZIXT4u1dqXi4AvBRlSesCZaQb9sWtjJqwmZNaRdkup2tyQTEV4Ws3dhGtp6Pw3RUB6hGQbFBKH1PczB6FSkuV6pA=s500-no?authuser=0"
+      alt="pinterest">
+    <img class="splode" src="https://cdn2.iconfinder.com/data/icons/1-animal-nature/16/bone_Line_pixelicons-512.png">
+    <img class="splode" src="https://cdn2.iconfinder.com/data/icons/1-animal-nature/16/bone_Line_pixelicons-512.png">
+    <img class="splode" src="https://cdn2.iconfinder.com/data/icons/1-animal-nature/16/bone_Line_pixelicons-512.png">
+    <img class="splode" src="https://cdn2.iconfinder.com/data/icons/1-animal-nature/16/bone_Line_pixelicons-512.png">
+    <img class="splode smol"
+      src="https://lh3.googleusercontent.com/proxy/kjpoN7eV27AW7ZpBNQMZO-JysV73kV6e3vaf-k64_PV1S7wTgpTsarkTNKvJ_oBI-TFgMrAOB5wvzmtiaeWJ6Lu8">
+    <img class="splode smol"
+      src="https://lh3.googleusercontent.com/proxy/kjpoN7eV27AW7ZpBNQMZO-JysV73kV6e3vaf-k64_PV1S7wTgpTsarkTNKvJ_oBI-TFgMrAOB5wvzmtiaeWJ6Lu8">
+    <img class="splode smol"
+      src="https://lh3.googleusercontent.com/proxy/kjpoN7eV27AW7ZpBNQMZO-JysV73kV6e3vaf-k64_PV1S7wTgpTsarkTNKvJ_oBI-TFgMrAOB5wvzmtiaeWJ6Lu8">
+    <img class="splode smol"
+      src="https://lh3.googleusercontent.com/proxy/kjpoN7eV27AW7ZpBNQMZO-JysV73kV6e3vaf-k64_PV1S7wTgpTsarkTNKvJ_oBI-TFgMrAOB5wvzmtiaeWJ6Lu8">
+  </a>
+</div>
